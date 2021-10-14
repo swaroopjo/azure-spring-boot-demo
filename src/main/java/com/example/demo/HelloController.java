@@ -14,7 +14,7 @@ public class HelloController {
 	@GetMapping("/")
 	public ResponseEntity index() {
 
-		return new ResponseEntity("Some Internal Exception", HttpStatus.INTERNAL_SERVER_ERROR);
+		return new ResponseEntity("Hello world" + new Date(), HttpStatus.OK);
 	}
 
 }
